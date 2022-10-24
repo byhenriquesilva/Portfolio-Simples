@@ -1,0 +1,154 @@
+body{
+
+    background-image: url(../imagens/bg.jpg);   /*IMAGEM DE FUNDO*/
+    background-repeat: no-repeat;   /*COMANDO PARA NÃO REPETIR A IMAGEM*/
+    background-size: cover;     /*APARECER MAIS A IMAGEM*/
+    font-family: 'Baloo 2', cursive; 
+    color: white;
+    font-size: 18px;
+    display: flex;  /*DEIXA FLEXIVEL PRA MODIFICAR A POSIÇÃO, JA DEIXA ALINHADO EM LINHA*/
+    min-height: 100vh;      /*ALTURA MIN DO BODY*/
+    justify-content: center;    /*CENTRALIZANDO HORIZONTALMENTE*/
+    align-items: center;     /*CENTRALIZANDO VERTICALMENTE*/
+
+}
+
+.card{
+
+    background-color: #070d12;
+    width: 400px;    /*LARGURA DO CARTÃO*/
+    border: 3px solid #3e77e0;  /*BORDA*/
+    border-radius: 10px;     /*ARREDONDAMENTO DA BORDA*/
+    overflow: hidden;    /*CORTA O CONTEÚDO QUE ULTRAPASSA O TAMANHO DA DIV*/
+
+}
+
+ .card .info img{
+
+    width: 90px;    /*LARGURA DA IMAGEM*/
+    height: 90px;   /*ALTURA DA IMAGEM*/
+    border-radius: 50px;    /*ARREDONDAMENTO DA BORDA*/
+    border: 4px solid #3e77e0;   /*ESTILO DA BORDA*/
+
+
+ }
+
+ .card .info{
+
+    padding-top: 20px;   /*ESPAÇAMENTO INTERNO*/
+    display: flex;   /*DEIXA FLEXIVEL PRA MODIFICAR A POSIÇÃO, JA DEIXA ALINHADO EM LINHA*/
+    flex-direction: column;    /*MUDA DE LINHA PARA FORMA DE COLUNA*/
+    align-items: center;     /*ALINHAMENTO HORIZONTALMENTE POR CAUSA DO FLEX DIRECTION COLUMN*/
+    gap: 10px;   /*ESPAÇAMENTO ENTRE AS TAGS*/
+
+ }
+
+.card .info .name{
+
+    font-size: 23px;
+
+}
+
+.card .info .job{
+
+    font-size: 18px;
+    color:#7f91cc;
+    padding-bottom: 8px;   /*ESPAÇAMENTO NA PARTE DE BAIXO*/
+
+}
+
+.card .content .guide{
+
+    display: flex;  /*DEIXA FLEXIVEL PRA MODIFICAR A POSIÇÃO, JA DEIXA ALINHADO EM LINHA*/
+
+}
+
+.card .content .guide .icon{
+
+    width: 50%;    /*DEU UM ESPAÇAMENTO DE 50% DO ESPAÇO PARA CADA ICONS*/
+    display: flex;  /*DEIXA FLEXIVEL PRA MODIFICAR A POSIÇÃO, JA DEIXA ALINHADO EM LINHA*/
+    justify-content: center;    /*CENTRALIZA TAGS*/
+    background: #070d12;
+    padding-top: 10px;
+    cursor: pointer;    /*MUDA O CURSO AO PASSAR POR CIMA DO OBJ*/
+    transition: background-color 0.2s ease-in-out;   /*TEMPO QUE LEVA PARA MUDAR DE COR AO PASSAR POR CIMA COM O MOUSE*/
+
+}
+
+.guide img{
+
+    width: 30px;    /*LARGURA DOS ICONES*/
+
+}
+
+.card .inforGuide .inforMe{
+
+    background-color: #070d12;
+
+}
+
+.card .guide .icon:hover{   
+
+    /*HOVER = PASSAR POR CIMA*/
+    /*QUANDO O MOUSE PASSAR POR CIMA ELE MUDA DE COR, QUANDO HAVER INTERAÇÃO*/
+    background-color: #0d1924;
+
+}
+
+.inforGuide .inforMe{
+
+    min-height: 350px;   /*  DEFINE UMA ATURA MINIMA */
+    padding-left: 15px;    /*ESPAÇAMENTO INTERNO ESQUERDA*/
+    padding-right: 15px;    /*ESPAÇAMENTO INTERNO DIREITA*/
+    padding-bottom: 15px;    /*ESPAÇAMENTO INTERNO TOPO*/
+    display: block;    /*EXIBIÇÃO*/
+    
+}
+
+
+.inforMe .subTitle{
+   
+    font-size: 18px;
+    text-align: center;   /*ALINHANDO TEXTO*/
+    margin-bottom: 20px;   /*ESPACAMENTO DE MARGEM NA PARTE DE BAIXO*/
+    padding-top: 13px;   /*ESPAÇAMENTO INTERNO TOPO*/
+
+}
+
+.inforMe .description{
+
+    font-size: 16px;
+    max-height: 275px;   /*ALTURA MAXIMA QUE VAI SER MOSTRADO*/
+    overflow-y: auto;   /*CRIA UM SCROLL ESCCONDENTO O TXT QUE PASSA DO LIMITE */
+    padding-right: 10px;    /*ESPAÇAMENTO INTERNO DIREITA*/
+    text-align: justify;
+
+}
+
+.inforGuide .description span{
+
+    color: #3e77e0;
+
+}
+
+/*BARRA DE ROLAGEM*/
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #3e77e0#070d12;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #070d12;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #3e77e0;
+    border-radius: 20px;
+    border: 3px solid #070d12;
+  }

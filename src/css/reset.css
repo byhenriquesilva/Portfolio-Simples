@@ -1,0 +1,16 @@
+/*ARQUIVO PARA RESETAR AS PROPRIEDADES*/
+*{
+    margin: 0;    /*ESPAÇAMENTO EXTERNO*/
+    padding: 0;    /*ESPAÇAMENTO INTERNO*/
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;   /*RETIRA AS ÂNCORAS*/ 
+}
+
+a{
+
+    text-decoration: none;    /*RETIRA O UNDERLINE DO LINK*/ 
+    color: black; 
+}
